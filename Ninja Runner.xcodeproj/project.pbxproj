@@ -1,0 +1,481 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C502BEB627303763005FC04E /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = C502BEB527303763005FC04E /* GameScene.swift */; };
+		C502BEB82730404D005FC04E /* LevelUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = C502BEB72730404D005FC04E /* LevelUnit.swift */; };
+		C502BEBC273040DE005FC04E /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = C502BEBB273040DE005FC04E /* Player.swift */; };
+		C51295C52756C28100650BFB /* jumpSound3.wav in Resources */ = {isa = PBXBuildFile; fileRef = C51295B92756C28000650BFB /* jumpSound3.wav */; };
+		C51295C62756C28100650BFB /* windBackgroundSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = C51295BA2756C28000650BFB /* windBackgroundSound.wav */; };
+		C51295C72756C28100650BFB /* jumpSound1.wav in Resources */ = {isa = PBXBuildFile; fileRef = C51295BB2756C28000650BFB /* jumpSound1.wav */; };
+		C51295C82756C28100650BFB /* footstepsSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = C51295BC2756C28000650BFB /* footstepsSound.wav */; };
+		C51295C92756C28100650BFB /* metalOnMetalSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = C51295BD2756C28100650BFB /* metalOnMetalSound.wav */; };
+		C51295CA2756C28100650BFB /* jumpSound4.wav in Resources */ = {isa = PBXBuildFile; fileRef = C51295BE2756C28100650BFB /* jumpSound4.wav */; };
+		C51295CB2756C28100650BFB /* shootingMissleSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = C51295BF2756C28100650BFB /* shootingMissleSound.wav */; };
+		C51295CC2756C28100650BFB /* plusThreeSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = C51295C02756C28100650BFB /* plusThreeSound.wav */; };
+		C51295CD2756C28100650BFB /* throwSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = C51295C12756C28100650BFB /* throwSound.wav */; };
+		C51295CE2756C28100650BFB /* gameOverSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = C51295C22756C28100650BFB /* gameOverSound.wav */; };
+		C51295CF2756C28100650BFB /* gettingFasterSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = C51295C32756C28100650BFB /* gettingFasterSound.wav */; };
+		C51295D02756C28100650BFB /* jumpSound2.wav in Resources */ = {isa = PBXBuildFile; fileRef = C51295C42756C28100650BFB /* jumpSound2.wav */; };
+		C524ED78273034D900AA15D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C524ED77273034D900AA15D8 /* AppDelegate.swift */; };
+		C524ED7A273034D900AA15D8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C524ED79273034D900AA15D8 /* ViewController.swift */; };
+		C524ED7F273034DA00AA15D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C524ED7E273034DA00AA15D8 /* Assets.xcassets */; };
+		C53C21B02735CF8200AB8B3B /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = C53C21AF2735CF8200AB8B3B /* Box.swift */; };
+		C53C21B22739720200AB8B3B /* Rain.swift in Sources */ = {isa = PBXBuildFile; fileRef = C53C21B12739720200AB8B3B /* Rain.swift */; };
+		C53C21B42739A8E900AB8B3B /* Turret.swift in Sources */ = {isa = PBXBuildFile; fileRef = C53C21B32739A8E900AB8B3B /* Turret.swift */; };
+		C547C227273B05B200FAF6BF /* Ninja.atlas in Resources */ = {isa = PBXBuildFile; fileRef = C547C226273B05B200FAF6BF /* Ninja.atlas */; };
+		C547C22D273B132A00FAF6BF /* MetalOnMetal.sks in Resources */ = {isa = PBXBuildFile; fileRef = C547C22C273B132A00FAF6BF /* MetalOnMetal.sks */; };
+		C547C231273B1E8A00FAF6BF /* FootSteps.sks in Resources */ = {isa = PBXBuildFile; fileRef = C547C230273B1E8A00FAF6BF /* FootSteps.sks */; };
+		C547C235273B22D300FAF6BF /* TurretShot.sks in Resources */ = {isa = PBXBuildFile; fileRef = C547C234273B22D300FAF6BF /* TurretShot.sks */; };
+		C547C237273B255C00FAF6BF /* BlueBox.sks in Resources */ = {isa = PBXBuildFile; fileRef = C547C236273B255C00FAF6BF /* BlueBox.sks */; };
+		C547C239273B2A4000FAF6BF /* RedBox.sks in Resources */ = {isa = PBXBuildFile; fileRef = C547C238273B2A4000FAF6BF /* RedBox.sks */; };
+		C547C23B273B2BE900FAF6BF /* plus3.sks in Resources */ = {isa = PBXBuildFile; fileRef = C547C23A273B2BE900FAF6BF /* plus3.sks */; };
+		C5AB226427304AC000FA1E65 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5AB226327304AC000FA1E65 /* Main.storyboard */; };
+		C5BFC7282733420900C8FE87 /* PlayerBullet.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5BFC7272733420900C8FE87 /* PlayerBullet.swift */; };
+		C5E9D9D727307CD800537B3D /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = C5E9D9D627307CD800537B3D /* GameScene.sks */; };
+		C5EABBAA27432CE800BA3EA6 /* crosshair.png in Resources */ = {isa = PBXBuildFile; fileRef = C5EABBA927432CE800BA3EA6 /* crosshair.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C502BEB527303763005FC04E /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		C502BEB72730404D005FC04E /* LevelUnit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LevelUnit.swift; sourceTree = "<group>"; };
+		C502BEBB273040DE005FC04E /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		C51295B92756C28000650BFB /* jumpSound3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = jumpSound3.wav; sourceTree = "<group>"; };
+		C51295BA2756C28000650BFB /* windBackgroundSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = windBackgroundSound.wav; sourceTree = "<group>"; };
+		C51295BB2756C28000650BFB /* jumpSound1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = jumpSound1.wav; sourceTree = "<group>"; };
+		C51295BC2756C28000650BFB /* footstepsSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = footstepsSound.wav; sourceTree = "<group>"; };
+		C51295BD2756C28100650BFB /* metalOnMetalSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = metalOnMetalSound.wav; sourceTree = "<group>"; };
+		C51295BE2756C28100650BFB /* jumpSound4.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = jumpSound4.wav; sourceTree = "<group>"; };
+		C51295BF2756C28100650BFB /* shootingMissleSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = shootingMissleSound.wav; sourceTree = "<group>"; };
+		C51295C02756C28100650BFB /* plusThreeSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = plusThreeSound.wav; sourceTree = "<group>"; };
+		C51295C12756C28100650BFB /* throwSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = throwSound.wav; sourceTree = "<group>"; };
+		C51295C22756C28100650BFB /* gameOverSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = gameOverSound.wav; sourceTree = "<group>"; };
+		C51295C32756C28100650BFB /* gettingFasterSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = gettingFasterSound.wav; sourceTree = "<group>"; };
+		C51295C42756C28100650BFB /* jumpSound2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = jumpSound2.wav; sourceTree = "<group>"; };
+		C524ED74273034D900AA15D8 /* Ninja Runner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ninja Runner.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C524ED77273034D900AA15D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C524ED79273034D900AA15D8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C524ED7E273034DA00AA15D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C524ED83273034DA00AA15D8 /* Ninja_Runner.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Ninja_Runner.entitlements; sourceTree = "<group>"; };
+		C53C21AF2735CF8200AB8B3B /* Box.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = "<group>"; };
+		C53C21B12739720200AB8B3B /* Rain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rain.swift; sourceTree = "<group>"; };
+		C53C21B32739A8E900AB8B3B /* Turret.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Turret.swift; sourceTree = "<group>"; };
+		C547C226273B05B200FAF6BF /* Ninja.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Ninja.atlas; sourceTree = "<group>"; };
+		C547C22C273B132A00FAF6BF /* MetalOnMetal.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MetalOnMetal.sks; sourceTree = "<group>"; };
+		C547C230273B1E8A00FAF6BF /* FootSteps.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = FootSteps.sks; sourceTree = "<group>"; };
+		C547C234273B22D300FAF6BF /* TurretShot.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = TurretShot.sks; sourceTree = "<group>"; };
+		C547C236273B255C00FAF6BF /* BlueBox.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = BlueBox.sks; sourceTree = "<group>"; };
+		C547C238273B2A4000FAF6BF /* RedBox.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = RedBox.sks; sourceTree = "<group>"; };
+		C547C23A273B2BE900FAF6BF /* plus3.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = plus3.sks; sourceTree = "<group>"; };
+		C5AB226327304AC000FA1E65 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		C5BFC7272733420900C8FE87 /* PlayerBullet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerBullet.swift; sourceTree = "<group>"; };
+		C5E9D9D627307CD800537B3D /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		C5EABBA927432CE800BA3EA6 /* crosshair.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = crosshair.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C524ED71273034D900AA15D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C51295B82756C26E00650BFB /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				C51295BC2756C28000650BFB /* footstepsSound.wav */,
+				C51295C22756C28100650BFB /* gameOverSound.wav */,
+				C51295C32756C28100650BFB /* gettingFasterSound.wav */,
+				C51295BB2756C28000650BFB /* jumpSound1.wav */,
+				C51295C42756C28100650BFB /* jumpSound2.wav */,
+				C51295B92756C28000650BFB /* jumpSound3.wav */,
+				C51295BE2756C28100650BFB /* jumpSound4.wav */,
+				C51295BD2756C28100650BFB /* metalOnMetalSound.wav */,
+				C51295C02756C28100650BFB /* plusThreeSound.wav */,
+				C51295BF2756C28100650BFB /* shootingMissleSound.wav */,
+				C51295C12756C28100650BFB /* throwSound.wav */,
+				C51295BA2756C28000650BFB /* windBackgroundSound.wav */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		C524ED6B273034D900AA15D8 = {
+			isa = PBXGroup;
+			children = (
+				C524ED76273034D900AA15D8 /* Ninja Runner */,
+				C524ED75273034D900AA15D8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C524ED75273034D900AA15D8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C524ED74273034D900AA15D8 /* Ninja Runner.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C524ED76273034D900AA15D8 /* Ninja Runner */ = {
+			isa = PBXGroup;
+			children = (
+				C51295B82756C26E00650BFB /* Sounds */,
+				C547C23E273B2FC500FAF6BF /* SpriteNodes */,
+				C547C23D273B2FA400FAF6BF /* Controllers */,
+				C547C23C273B2F8700FAF6BF /* Particles */,
+				C5E9D9D627307CD800537B3D /* GameScene.sks */,
+				C524ED83273034DA00AA15D8 /* Ninja_Runner.entitlements */,
+				C5AB226327304AC000FA1E65 /* Main.storyboard */,
+				C547C226273B05B200FAF6BF /* Ninja.atlas */,
+				C524ED7E273034DA00AA15D8 /* Assets.xcassets */,
+				C5EABBA927432CE800BA3EA6 /* crosshair.png */,
+			);
+			path = "Ninja Runner";
+			sourceTree = "<group>";
+		};
+		C547C23C273B2F8700FAF6BF /* Particles */ = {
+			isa = PBXGroup;
+			children = (
+				C547C22C273B132A00FAF6BF /* MetalOnMetal.sks */,
+				C547C238273B2A4000FAF6BF /* RedBox.sks */,
+				C547C230273B1E8A00FAF6BF /* FootSteps.sks */,
+				C547C234273B22D300FAF6BF /* TurretShot.sks */,
+				C547C236273B255C00FAF6BF /* BlueBox.sks */,
+				C547C23A273B2BE900FAF6BF /* plus3.sks */,
+			);
+			path = Particles;
+			sourceTree = "<group>";
+		};
+		C547C23D273B2FA400FAF6BF /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C524ED77273034D900AA15D8 /* AppDelegate.swift */,
+				C502BEB72730404D005FC04E /* LevelUnit.swift */,
+				C53C21B12739720200AB8B3B /* Rain.swift */,
+				C524ED79273034D900AA15D8 /* ViewController.swift */,
+				C502BEB527303763005FC04E /* GameScene.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		C547C23E273B2FC500FAF6BF /* SpriteNodes */ = {
+			isa = PBXGroup;
+			children = (
+				C502BEBB273040DE005FC04E /* Player.swift */,
+				C5BFC7272733420900C8FE87 /* PlayerBullet.swift */,
+				C53C21B32739A8E900AB8B3B /* Turret.swift */,
+				C53C21AF2735CF8200AB8B3B /* Box.swift */,
+			);
+			path = SpriteNodes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C524ED73273034D900AA15D8 /* Ninja Runner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C524ED86273034DA00AA15D8 /* Build configuration list for PBXNativeTarget "Ninja Runner" */;
+			buildPhases = (
+				C524ED70273034D900AA15D8 /* Sources */,
+				C524ED71273034D900AA15D8 /* Frameworks */,
+				C524ED72273034D900AA15D8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Ninja Runner";
+			productName = "Ninja Runner";
+			productReference = C524ED74273034D900AA15D8 /* Ninja Runner.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C524ED6C273034D900AA15D8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					C524ED73273034D900AA15D8 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+				};
+			};
+			buildConfigurationList = C524ED6F273034D900AA15D8 /* Build configuration list for PBXProject "Ninja Runner" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C524ED6B273034D900AA15D8;
+			productRefGroup = C524ED75273034D900AA15D8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C524ED73273034D900AA15D8 /* Ninja Runner */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C524ED72273034D900AA15D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C547C235273B22D300FAF6BF /* TurretShot.sks in Resources */,
+				C547C23B273B2BE900FAF6BF /* plus3.sks in Resources */,
+				C51295C72756C28100650BFB /* jumpSound1.wav in Resources */,
+				C51295CE2756C28100650BFB /* gameOverSound.wav in Resources */,
+				C5E9D9D727307CD800537B3D /* GameScene.sks in Resources */,
+				C51295CC2756C28100650BFB /* plusThreeSound.wav in Resources */,
+				C547C231273B1E8A00FAF6BF /* FootSteps.sks in Resources */,
+				C524ED7F273034DA00AA15D8 /* Assets.xcassets in Resources */,
+				C547C22D273B132A00FAF6BF /* MetalOnMetal.sks in Resources */,
+				C51295C52756C28100650BFB /* jumpSound3.wav in Resources */,
+				C51295CB2756C28100650BFB /* shootingMissleSound.wav in Resources */,
+				C547C227273B05B200FAF6BF /* Ninja.atlas in Resources */,
+				C5AB226427304AC000FA1E65 /* Main.storyboard in Resources */,
+				C547C237273B255C00FAF6BF /* BlueBox.sks in Resources */,
+				C51295C62756C28100650BFB /* windBackgroundSound.wav in Resources */,
+				C51295CA2756C28100650BFB /* jumpSound4.wav in Resources */,
+				C5EABBAA27432CE800BA3EA6 /* crosshair.png in Resources */,
+				C51295C92756C28100650BFB /* metalOnMetalSound.wav in Resources */,
+				C51295C82756C28100650BFB /* footstepsSound.wav in Resources */,
+				C547C239273B2A4000FAF6BF /* RedBox.sks in Resources */,
+				C51295CF2756C28100650BFB /* gettingFasterSound.wav in Resources */,
+				C51295CD2756C28100650BFB /* throwSound.wav in Resources */,
+				C51295D02756C28100650BFB /* jumpSound2.wav in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C524ED70273034D900AA15D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C502BEB82730404D005FC04E /* LevelUnit.swift in Sources */,
+				C524ED7A273034D900AA15D8 /* ViewController.swift in Sources */,
+				C502BEB627303763005FC04E /* GameScene.swift in Sources */,
+				C502BEBC273040DE005FC04E /* Player.swift in Sources */,
+				C53C21B02735CF8200AB8B3B /* Box.swift in Sources */,
+				C5BFC7282733420900C8FE87 /* PlayerBullet.swift in Sources */,
+				C53C21B42739A8E900AB8B3B /* Turret.swift in Sources */,
+				C53C21B22739720200AB8B3B /* Rain.swift in Sources */,
+				C524ED78273034D900AA15D8 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C524ED84273034DA00AA15D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C524ED85273034DA00AA15D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		C524ED87273034DA00AA15D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Ninja Runner/Ninja_Runner.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2HAP7LLHCJ;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.games";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "none.Ninja-Runner";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		C524ED88273034DA00AA15D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Ninja Runner/Ninja_Runner.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2HAP7LLHCJ;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.games";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "none.Ninja-Runner";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C524ED6F273034D900AA15D8 /* Build configuration list for PBXProject "Ninja Runner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C524ED84273034DA00AA15D8 /* Debug */,
+				C524ED85273034DA00AA15D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C524ED86273034DA00AA15D8 /* Build configuration list for PBXNativeTarget "Ninja Runner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C524ED87273034DA00AA15D8 /* Debug */,
+				C524ED88273034DA00AA15D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C524ED6C273034D900AA15D8 /* Project object */;
+}
