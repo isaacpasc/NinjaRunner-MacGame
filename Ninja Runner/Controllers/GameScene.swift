@@ -86,7 +86,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     // mouse location
     var mouseLocation:CGPoint = CGPoint(x: 0, y: 0)
     
-    let footSteps = SKEmitterNode(fileNamed: "FootSteps.sks")
+    let footSteps = SKNode(fileNamed: "FootSteps.sks")
     
     override func didMove(to view: SKView) {
         
